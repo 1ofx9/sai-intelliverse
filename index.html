@@ -1,0 +1,41 @@
+<!-- Aurthors: Team Cario -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ployer</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <div class="bg-drop"></div>
+    <div class="container">
+        <div class="artwork">
+            <h2>Now Playing</h2>
+            <img src="/src/images/empty-art.jpg" alt="" width="400px" height="350px">
+            <div class="songcontent"></div>
+        </div>
+        
+        <div class="sidebar">
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="music-library">
+            <h2>Music Library</h2>
+            <ul>
+                <li onclick="playTrack('src/tracks/02. HAYD - Head In The Clouds.flac', this)">Head in the clouds - HAYD</li>
+                <li onclick="playTrack('src/tracks/08. Joji - Sanctuary.flac', this)">Sanctuary - Jogi</li>
+                <li onclick="playTrack('src/tracks/06. Djo - End of Beginning.flac',this)">End of Beginning - Djo</li>
+                <li onclick="playTrack('src/tracks/08. Dhruv - grateful (Explicit).flac',this)">Grateful - Dhruv</li>
+                <li onclick="playTrack('src/tracks/04. Cigarettes After Sex - Apocalypse.flac',this)">Apocalypse - Cigarettes After Sex</li>
+            </ul>
+        </div>
+        <audio id="audioPlayer" controls></audio>
+        <div class="active-track-info"></div>   
+        </div>
+    </div>
+    
+</body>
+</html>

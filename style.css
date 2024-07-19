@@ -1,0 +1,158 @@
+/* Aurthors: team cario */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("/src/images/classroom.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+}
+
+.bg-drop {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 95%;
+  width: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  transition: 0.5s;
+  margin: 25px;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artwork {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 95%;
+  left: 600px;
+  width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  transition: 0.5s;
+  margin: 25px;
+  border-radius: 16px;
+}
+
+.artwork h2 {
+  padding: 25px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.artwork img {
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+.artwork .songcontent {
+  padding-left: 30px;
+  font-size: 18px;
+  color: snow;
+}
+
+.sidebar .search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sidebar .search-bar input {
+  width: 200px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0 10px;
+  font-size: 18px;
+  border-radius: 18px;
+}
+
+.sidebar .music-library {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.sidebar .music-library ul {
+  margin: 20px;
+  gap: 40px;
+}
+
+.sidebar .music-library ul li {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidebar .music-library ul li {
+  list-style: none;
+}
+
+.music-library {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.music-library h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.music-library li.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  color: white;
+  border-radius: 16px;
+}
